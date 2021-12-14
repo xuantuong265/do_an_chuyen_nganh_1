@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "869732626219",
+    "project_id": "doanchuyennganh-3d276",
+    "storage_bucket": "doanchuyennganh-3d276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869732626219:android:2b625a92b7b7ecc02cdf6e",
+        "android_client_info": {
+          "package_name": "com.example.yo7a.healthwatcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869732626219-9vbm2htjfqvugjv91n69mogm65vsv82a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd8aA2qiDTm7a9w12CRVzBCkHNGwnQlQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869732626219-9vbm2htjfqvugjv91n69mogm65vsv82a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

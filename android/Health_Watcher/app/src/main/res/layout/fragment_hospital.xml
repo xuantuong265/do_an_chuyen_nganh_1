@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bgapp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/zenantique"
+            android:text="Covid-19"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/zenantique"
+            android:text="Are you feeling sick ?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="361dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/zenantique"
+            android:lineSpacingExtra="4dp"
+            android:text="If you feel sick with any of  covid-19 symptoms please call or SMS us immediately for help."
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_editor_absoluteY="38dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/flag_vn" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/call_button"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="@font/zenantique"
+            android:paddingLeft="8dp"
+            android:text="Call now"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/send_button"
+            android:drawableLeft="@drawable/sms"
+            android:fontFamily="@font/zenantique"
+            android:paddingLeft="8dp"
+            android:text="Send SMS"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/zenantique"
+            android:text="Prevention"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/prevention1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/prevention1"
+            app:layout_constraintEnd_toStartOf="@+id/prevention2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/prevention2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/prevention2"
+                app:layout_constraintBottom_toBottomOf="@+id/prevention1"
+                app:layout_constraintEnd_toStartOf="@+id/prevention3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/prevention1"
+                app:layout_constraintTop_toTopOf="@+id/prevention1" />
+
+            <ImageView
+                android:id="@+id/prevention3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/prevention3"
+                app:layout_constraintBottom_toBottomOf="@+id/prevention2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/prevention2"
+                app:layout_constraintTop_toTopOf="@+id/prevention2" />
+
+            <TextView
+                android:id="@+id/txt_prevent1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/zenantique"
+                android:text=" Avoid close contact"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/prevention1"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/prevention1"
+                app:layout_constraintTop_toBottomOf="@+id/prevention1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_prevent"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/zenantique"
+                android:text=" Avoid close contact"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/prevention1"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/prevention1"
+                app:layout_constraintTop_toBottomOf="@+id/prevention1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txt_prevent2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/zenantique"
+                android:text="Clean your hand often"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/prevention2"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/prevention2"
+                app:layout_constraintTop_toBottomOf="@+id/prevention2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/zenantique"
+                android:text="Wear a face mask"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/prevention3"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="@+id/prevention3"
+                app:layout_constraintTop_toBottomOf="@+id/prevention3" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/covidbanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_prevent1" />
+
+        <Button
+            android:id="@+id/stat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/statis_button"
+            android:drawableRight="@drawable/arrow"
+            android:fontFamily="@font/zenantique"
+            android:includeFontPadding="false"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:text="See Statistics"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

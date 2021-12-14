@@ -169,8 +169,6 @@ public class BloodPressureProcess extends Activity {
 
             ++counter; //countes number of frames in 30 seconds
 
-            Log.d("aa", String.valueOf(counter));
-
 
             //To check if we got a good red intensity to process if not return to the condition and set it again until we get a good red intensity
             if (RedAvg < 200) {

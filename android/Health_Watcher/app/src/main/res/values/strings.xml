@@ -2,10 +2,28 @@
     <string name="app_name">HealthWatcher</string>
     <string name="msg">Please enable all permission</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="powered_by">Powered by Duc Nam and Xuan Tuong</string>
+
     <string-array name="Gender">
         <item>Male</item>
         <item>Female</item>
 
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="add_image">Add image</string>
+    <string name="email">Email</string>
+    <string name="Name">Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="select_user">Select User</string>
+    <string name="type_a_message">Type a message</string>
 
 </resources>

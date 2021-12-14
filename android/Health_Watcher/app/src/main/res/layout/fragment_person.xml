@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bgapp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="323dp"
+            android:layout_height="507dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/profile_border"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="UserName"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="524dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textName">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item_profile">
+
+                    <ImageView
+                        android:id="@+id/img_message"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@mipmap/imgmessage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="My Message"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/img_message"
+                        app:layout_constraintTop_toTopOf="@+id/img_message" />
+
+                    <TextView
+                        android:id="@+id/text_message2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Your explain about my message"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_message"
+                        app:layout_constraintStart_toEndOf="@+id/img_message" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item_profile">
+
+                    <ImageView
+                        android:id="@+id/img_notification"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@mipmap/imgnotification"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Notification"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/img_notification"
+                        app:layout_constraintTop_toTopOf="@+id/img_notification" />
+
+                    <TextView
+                        android:id="@+id/text_notification2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Your explain about notification"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_notification"
+                        app:layout_constraintStart_toEndOf="@+id/img_notification" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="12dp"-->
+                <!--                        android:layout_marginBottom="12dp"-->
+                <!--                        android:background="@drawable/item_profile">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/img_calendar"-->
+                <!--                            android:layout_width="40dp"-->
+                <!--                            android:layout_height="48dp"-->
+                <!--                            android:layout_marginLeft="20dp"-->
+                <!--                            android:layout_marginTop="8dp"-->
+                <!--                            android:layout_marginBottom="8dp"-->
+                <!--                            android:src="@mipmap/imgcalendar"-->
+                <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/text_calendar"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginStart="20dp"-->
+                <!--                            android:fontFamily="@font/zenantique"-->
+                <!--                            android:text="Calendar"-->
+                <!--                            android:textColor="@color/colorBlack"-->
+                <!--                            android:textSize="16sp"-->
+                <!--                            android:textStyle="bold"-->
+                <!--                            app:layout_constraintStart_toEndOf="@+id/img_calendar"-->
+                <!--                            app:layout_constraintTop_toTopOf="@+id/img_calendar" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/text_calendar2"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginStart="20dp"-->
+                <!--                            android:fontFamily="@font/zenantique"-->
+                <!--                            android:text="Your explain about calendar"-->
+                <!--                            android:textColor="@color/colorBlack"-->
+                <!--                            android:textSize="12sp"-->
+                <!--                            app:layout_constraintBottom_toBottomOf="@+id/img_calendar"-->
+                <!--                            app:layout_constraintStart_toEndOf="@+id/img_calendar" />-->
+
+
+                <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item_profile">
+
+                    <ImageView
+                        android:id="@+id/img_camera"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@mipmap/imgcamera"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Gallery"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/img_camera"
+                        app:layout_constraintTop_toTopOf="@+id/img_camera" />
+
+                    <TextView
+                        android:id="@+id/text_camera2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Your explain about gallery"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_camera"
+                        app:layout_constraintStart_toEndOf="@+id/img_camera" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item_profile">
+
+                    <ImageView
+                        android:id="@+id/img_document"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@mipmap/imgdocument"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_document"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Measuring history"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/img_document"
+                        app:layout_constraintTop_toTopOf="@+id/img_document" />
+
+                    <TextView
+                        android:id="@+id/text_document2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Your explain about measuring"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_document"
+                        app:layout_constraintStart_toEndOf="@+id/img_document" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/item_profile">
+
+                    <ImageView
+                        android:id="@+id/img_logout"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@mipmap/imglogout"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Logout"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/img_logout"
+                        app:layout_constraintTop_toTopOf="@+id/img_logout" />
+
+                    <TextView
+                        android:id="@+id/text_logout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/zenantique"
+                        android:text="Your explain about logout"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_logout"
+                        app:layout_constraintStart_toEndOf="@+id/img_logout" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/person"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@mipmap/person"
+            android:background="@drawable/background_icon"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

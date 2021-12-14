@@ -1,9 +1,5 @@
 package com.example.yo7a.healthwatcher;
 
-/**
- * Created by Yo7A on 5/9/2017.
- */
-
 abstract class ImageProcessing {
 
     private static int decodeYUV420SPtoRedBlueGreenSum(byte[] yuv420sp, int width, int height, int type) {

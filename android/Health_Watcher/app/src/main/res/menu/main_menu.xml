@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+    </group>
+
+    <item android:title="Health Check">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/heart_rate"
+                    android:title="Heart Rate"
+                    android:icon="@mipmap/heart_rate"/>
+                <item
+                    android:id="@+id/respiration_rate"
+                    android:title="Respiration Rate"
+                    android:icon="@drawable/ic_baseline_run_circle_24"/>
+                <item
+                    android:id="@+id/blood_pressure"
+                    android:title="Blood Pressure"
+                    android:icon="@mipmap/blood_pressure"/>
+                <item
+                    android:id="@+id/oxygen_saturation"
+                    android:title="Oxygen Saturation"
+                    android:icon="@mipmap/oxygen_saturation"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_baseline_person_24"/>
+                <item
+                    android:id="@+id/logout"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_baseline_login_24"/>
+            </group>
+        </menu>
+    </item>
+</menu>
