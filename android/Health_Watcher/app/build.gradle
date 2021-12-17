@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 32
     buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.example.yo7a.healthwatcher"
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -51,6 +51,14 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
     implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+    implementation "androidx.cardview:cardview:1.0.0"
 
 
 }

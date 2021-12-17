@@ -35,15 +35,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
-
-        image = findViewById(R.id.imageView);
-        logo = findViewById(R.id.textView);
-
-        image.setAnimation(topAnim);
-        logo.setAnimation(bottomAnim);
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

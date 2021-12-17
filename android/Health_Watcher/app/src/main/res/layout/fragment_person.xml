@@ -32,9 +32,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
+                android:layout_marginBottom="@dimen/_60sdp"
                 android:text="UserName"
                 android:textColor="@color/colorBlack"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +81,7 @@
                         android:fontFamily="@font/zenantique"
                         android:text="My Message"
                         android:textColor="@color/colorBlack"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toEndOf="@+id/img_message"
                         app:layout_constraintTop_toTopOf="@+id/img_message" />
@@ -338,10 +339,10 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/person"
-            android:layout_width="@dimen/_80sdp"
-            android:layout_height="@dimen/_80sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
             android:src="@mipmap/person"
             android:background="@drawable/background_icon"
             android:elevation="8dp"

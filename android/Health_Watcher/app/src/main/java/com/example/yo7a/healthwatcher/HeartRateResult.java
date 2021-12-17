@@ -9,23 +9,33 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.yo7a.healthwatcher.utilities.Constants;
+import com.example.yo7a.healthwatcher.utilities.PreferenceManager;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 
-public class HeartRateResult extends AppCompatActivity {
+public class HeartRateResult extends AppCompatActivity implements SaveDatabase{
 
     private String user, Date;
     int HR;
     DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
     Date today = Calendar.getInstance().getTime();
 
+    private FirebaseFirestore database = FirebaseFirestore.getInstance();
+    private PreferenceManager preferenceManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart_rate_result);
+
+        preferenceManager = new PreferenceManager(getApplicationContext());
 
         Date = df.format(today);
         TextView RHR = this.findViewById(R.id.HRR);
@@ -35,8 +45,8 @@ public class HeartRateResult extends AppCompatActivity {
         if (bundle != null) {
             HR = bundle.getInt("bpm");
             user = bundle.getString("Usr");
-            Log.d("DEBUG_TAG", "ccccc" + user);
             RHR.setText(String.valueOf(HR));
+            this.saveDataHistory(preferenceManager.getString(Constants.KEY_USER_ID), Constants.BPM, String.valueOf(HR));
         }
 
         SHR.setOnClickListener(v -> {
@@ -61,5 +71,23 @@ public class HeartRateResult extends AppCompatActivity {
         i.putExtra("Usr", user);
         startActivity(i);
         finish();
+    }
+
+    @Override
+    public void saveDataHistory(String id, String type, String number) {
+        HashMap<String, Object> history = new HashMap<>();
+        history.put("idUser", id);
+        history.put("number", number);
+        history.put("type", type);
+        history.put(Constants.KEY_TIMESTAMP, new Date());
+
+        database.collection(Constants.KEY_COLLECTION_HISTORY)
+                .add(history)
+                .addOnSuccessListener(documentReference -> {
+                    Log.d("thanh cong", "okkkk");
+                })
+                .addOnFailureListener(exception -> {
+                    Log.d("that bai", "sfsdfjskjf");
+                });
     }
 }

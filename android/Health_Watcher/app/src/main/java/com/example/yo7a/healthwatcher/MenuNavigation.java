@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
@@ -31,7 +30,7 @@ public class MenuNavigation extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (item.getId()) {
                     case 1:
-                        fragment = new NotificationFragment();
+                        fragment = new HistoryFragment();
                         break;
                     case 2:
                         fragment = new HospitalFragment();

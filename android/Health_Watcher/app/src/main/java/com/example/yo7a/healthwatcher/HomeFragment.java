@@ -1,6 +1,7 @@
 package com.example.yo7a.healthwatcher;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -46,7 +47,7 @@ public class HomeFragment extends Fragment {
         });
 
         binding.O2.setOnClickListener(v -> {
-            p = 2;
+            p = 4;
             Intent i = new Intent(v.getContext(), StartVitalSigns.class);
             i.putExtra("Page", p);
             startActivity(i);
