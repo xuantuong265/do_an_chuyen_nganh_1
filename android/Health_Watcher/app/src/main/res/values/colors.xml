@@ -16,4 +16,7 @@
     <color name="text">#9e9e9e</color>
 
     <color name="textPrimary">#1D1617</color>
+    <color name="textLightPink">#FFEDE5</color>
+    <color name="grey">#F7F8F8</color>
+    <color name="pink">#A3163E</color>
 </resources>

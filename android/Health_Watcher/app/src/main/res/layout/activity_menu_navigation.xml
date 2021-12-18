@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/grey"
     tools:context=".MenuNavigation">
 
     <FrameLayout
@@ -15,14 +15,16 @@
         android:layout_weight="1"/>
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:background="#00000000"
+        android:elevation="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottom_navigation"
-        app:mbn_circleColor="@color/white"
-        app:mbn_selectedIconColor="#304ffe"
+        app:mbn_circleColor="@color/textLightPink"
+        app:mbn_selectedIconColor="@color/colorRed"
         app:mbn_countTextColor="@color/white"
-        app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_defaultIconColor="@color/white"
-        app:mbn_backgroundBottomColor="#304ffe"/>
+        app:mbn_countBackgroundColor="@color/colorRed"
+        app:mbn_defaultIconColor="@color/textPrimary"
+        app:mbn_backgroundBottomColor="@color/grey"/>
 
 </LinearLayout>
