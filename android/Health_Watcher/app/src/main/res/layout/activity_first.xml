@@ -23,21 +23,16 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            app:srcCompat="@mipmap/logoheart" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.20" />
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/logo" />
 
         <TextView
             android:id="@+id/logo_name"
             android:layout_width="wrap_content"
             android:layout_height="118dp"
             android:fontFamily="@font/bungee"
-            android:text="Hello there, Welcome Back"
-            android:textColor="@color/blue"
+            android:text="@string/hello_there_welcome_back"
+            android:textColor="@color/orange"
             android:textSize="40sp" />
 
         <EditText
@@ -54,7 +49,7 @@
             android:inputType="text"
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp"
-            android:fontFamily="@font/zenantique"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="@dimen/_13ssp"/>
 
         <EditText
@@ -71,7 +66,7 @@
             android:inputType="textPassword"
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp"
-            android:fontFamily="@font/zenantique"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="@dimen/_13ssp"/>
 
         <FrameLayout
@@ -107,7 +102,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_30sdp"
             android:text="@string/create_new_account"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/orange"
             android:textSize="@dimen/_13ssp"
             android:textStyle="bold"/>
 

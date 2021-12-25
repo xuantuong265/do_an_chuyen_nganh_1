@@ -16,37 +16,33 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="156dp"
+        android:layout_height="216dp"
         app:srcCompat="@mipmap/rsz_download" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_weight="0.14" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="286dp"
+        android:layout_height="14dp"
         android:layout_weight="0.87"
-        android:fontFamily="casual"
-        android:text="- Lightly place your index finger on \n   the rear camera.\n- Make sure the camera is fully \n   covered. \n- Measure in a shaded environment. \n- Don't move your finger until the \n   measurement is complete. \n- Finally place your finger then press \n   start. "
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/lightly_place_your_index_finger_on_n_the_rear_camera_n_make_sure_the_camera_is_fully_n_covered_n_measure_in_a_shaded_environment_n_don_t_move_your_finger_until_the_n_measurement_is_complete_n_finally_place_your_finger_then_press_n_start"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_weight="0.17" />
-
-    <ImageButton
+    <Button
         android:id="@+id/StartVS"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/start" />
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="@string/sign_in"
+        android:background="@drawable/button_sign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:gravity="center"/>
 </LinearLayout>

@@ -17,7 +17,8 @@
         android:textSize="@dimen/_8sdp"
         android:layout_marginLeft="@dimen/_5sdp"
         android:textColor="@color/textPrimary"
-        android:text="Item Title"/>
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/item_title"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_sub_item"

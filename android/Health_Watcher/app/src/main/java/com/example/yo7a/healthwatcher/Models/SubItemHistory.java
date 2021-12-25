@@ -1,7 +1,5 @@
 package com.example.yo7a.healthwatcher.Models;
 
-import java.util.List;
-
 public class SubItemHistory{
     private String id;
     private String idUser;

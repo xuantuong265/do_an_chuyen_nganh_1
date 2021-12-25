@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private static int SPLASH_FULLSCREEN = 5000;
 
     Animation topAnim, bottomAnim;
-    ImageView image;
-    TextView logo;
+    ImageView image, logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
                     decorview.setSystemUiVisibility(hideSystemBars());
             }
         });
+
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+
+        image = findViewById(R.id.imageView);
+        logo = findViewById(R.id.text_splash);
+
+        image.setAnimation(topAnim);
+        logo.setAnimation(bottomAnim);
 
         new Handler().postDelayed(new Runnable() {
             @Override

@@ -10,15 +10,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/bgapp">
+        android:background="@mipmap/banner_home">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="323dp"
             android:layout_height="507dp"
-            android:layout_marginStart="42dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="80dp"
-            android:layout_marginEnd="42dp"
+            android:layout_marginEnd="50dp"
             android:layout_marginBottom="32dp"
             android:background="@drawable/profile_border"
             android:elevation="5dp"
@@ -31,10 +31,11 @@
                 android:id="@+id/textName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="@dimen/_60sdp"
-                android:text="UserName"
+                android:text="@string/username"
                 android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_regular"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:layout_width="285dp"
+                android:layout_width="260dp"
                 android:layout_height="524dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="50dp"
@@ -55,16 +56,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textName">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_message"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="50dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/item_profile">
 
                     <ImageView
                         android:id="@+id/img_message"
-                        android:layout_width="40dp"
-                        android:layout_height="48dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
@@ -78,10 +80,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="My Message"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/my_message"
                         android:textColor="@color/colorBlack"
-                        android:textSize="16dp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toEndOf="@+id/img_message"
                         app:layout_constraintTop_toTopOf="@+id/img_message" />
@@ -91,10 +93,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Your explain about my message"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/your_explain_about_my_message"
                         android:textColor="@color/colorBlack"
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="@+id/img_message"
                         app:layout_constraintStart_toEndOf="@+id/img_message" />
 
@@ -102,6 +104,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_notification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -110,8 +113,8 @@
 
                     <ImageView
                         android:id="@+id/img_notification"
-                        android:layout_width="40dp"
-                        android:layout_height="48dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
@@ -125,8 +128,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Notification"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/notification"
                         android:textColor="@color/colorBlack"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -138,62 +141,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Your explain about notification"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/your_explain_about_notification"
                         android:textColor="@color/colorBlack"
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="@+id/img_notification"
                         app:layout_constraintStart_toEndOf="@+id/img_notification" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_marginTop="12dp"-->
-                <!--                        android:layout_marginBottom="12dp"-->
-                <!--                        android:background="@drawable/item_profile">-->
-
-                <!--                        <ImageView-->
-                <!--                            android:id="@+id/img_calendar"-->
-                <!--                            android:layout_width="40dp"-->
-                <!--                            android:layout_height="48dp"-->
-                <!--                            android:layout_marginLeft="20dp"-->
-                <!--                            android:layout_marginTop="8dp"-->
-                <!--                            android:layout_marginBottom="8dp"-->
-                <!--                            android:src="@mipmap/imgcalendar"-->
-                <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
-                <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-
-                <!--                        <TextView-->
-                <!--                            android:id="@+id/text_calendar"-->
-                <!--                            android:layout_width="wrap_content"-->
-                <!--                            android:layout_height="wrap_content"-->
-                <!--                            android:layout_marginStart="20dp"-->
-                <!--                            android:fontFamily="@font/zenantique"-->
-                <!--                            android:text="Calendar"-->
-                <!--                            android:textColor="@color/colorBlack"-->
-                <!--                            android:textSize="16sp"-->
-                <!--                            android:textStyle="bold"-->
-                <!--                            app:layout_constraintStart_toEndOf="@+id/img_calendar"-->
-                <!--                            app:layout_constraintTop_toTopOf="@+id/img_calendar" />-->
-
-                <!--                        <TextView-->
-                <!--                            android:id="@+id/text_calendar2"-->
-                <!--                            android:layout_width="wrap_content"-->
-                <!--                            android:layout_height="wrap_content"-->
-                <!--                            android:layout_marginStart="20dp"-->
-                <!--                            android:fontFamily="@font/zenantique"-->
-                <!--                            android:text="Your explain about calendar"-->
-                <!--                            android:textColor="@color/colorBlack"-->
-                <!--                            android:textSize="12sp"-->
-                <!--                            app:layout_constraintBottom_toBottomOf="@+id/img_calendar"-->
-                <!--                            app:layout_constraintStart_toEndOf="@+id/img_calendar" />-->
-
-
-                <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -204,8 +160,8 @@
 
                     <ImageView
                         android:id="@+id/img_camera"
-                        android:layout_width="40dp"
-                        android:layout_height="48dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
@@ -219,8 +175,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Gallery"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/gallery"
                         android:textColor="@color/colorBlack"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -232,10 +188,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Your explain about gallery"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/your_explain_about_gallery"
                         android:textColor="@color/colorBlack"
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="@+id/img_camera"
                         app:layout_constraintStart_toEndOf="@+id/img_camera" />
 
@@ -251,8 +207,8 @@
 
                     <ImageView
                         android:id="@+id/img_document"
-                        android:layout_width="40dp"
-                        android:layout_height="48dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
@@ -266,8 +222,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Measuring history"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/measuring_history"
                         android:textColor="@color/colorBlack"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -279,10 +235,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Your explain about measuring"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/your_explain_about_measuring"
                         android:textColor="@color/colorBlack"
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="@+id/img_document"
                         app:layout_constraintStart_toEndOf="@+id/img_document" />
 
@@ -290,6 +246,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -298,8 +255,8 @@
 
                     <ImageView
                         android:id="@+id/img_logout"
-                        android:layout_width="40dp"
-                        android:layout_height="48dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
@@ -313,8 +270,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Logout"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/logout"
                         android:textColor="@color/colorBlack"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -326,10 +283,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:fontFamily="@font/zenantique"
-                        android:text="Your explain about logout"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/your_explain_about_logout"
                         android:textColor="@color/colorBlack"
-                        android:textSize="12sp"
+                        android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="@+id/img_logout"
                         app:layout_constraintStart_toEndOf="@+id/img_logout" />
 
@@ -344,7 +301,6 @@
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_60sdp"
             android:src="@mipmap/person"
-            android:background="@drawable/background_icon"
             android:elevation="8dp"
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"

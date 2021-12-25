@@ -2,6 +2,7 @@ package com.example.yo7a.healthwatcher;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +22,7 @@ public class StartVitalSigns extends AppCompatActivity {
             p = extras.getInt("Page");
         }
 
-        ImageButton VS = this.findViewById(R.id.StartVS);
+        Button VS = this.findViewById(R.id.StartVS);
 
         VS.setOnClickListener(v -> {
 
@@ -74,7 +75,7 @@ public class StartVitalSigns extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent i = new Intent(StartVitalSigns.this, Primary.class);
+        Intent i = new Intent(StartVitalSigns.this, MenuNavigation.class);
         startActivity(i);
         finish();
         super.onBackPressed();

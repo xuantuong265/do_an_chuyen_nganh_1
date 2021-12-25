@@ -42,7 +42,6 @@ public class MessageFragment extends Fragment implements UserListener {
         binding = FragmentMessageBinding.inflate(inflater, container, false);
         preferenceManager = new PreferenceManager(getActivity());
         init();
-        setListeners();
         getUsers();
         return  binding.getRoot();
     }
@@ -52,10 +51,6 @@ public class MessageFragment extends Fragment implements UserListener {
         conversionsAdapter = new RecentConversionsAdapter(conversions);
         binding.userRecyclerView.setAdapter(conversionsAdapter);
         database = FirebaseFirestore.getInstance();
-    }
-
-    private void setListeners() {
-        binding.imageBack.setOnClickListener(v -> getActivity().onBackPressed());
     }
 
     private void getUsers() {

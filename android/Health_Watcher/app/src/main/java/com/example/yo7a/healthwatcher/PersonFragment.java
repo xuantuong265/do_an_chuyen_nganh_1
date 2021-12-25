@@ -39,7 +39,9 @@ public class PersonFragment extends Fragment {
     }
 
     private void setListeners() {
-        binding.imgLogout.setOnClickListener(v -> signOut());
+        binding.layoutLogout.setOnClickListener(v -> signOut());
+        binding.layoutMessage.setOnClickListener(v -> new MessageFragment());
+        binding.layoutNotification.setOnClickListener(v -> new HistoryFragment());
     }
 
     private void loadUserDetail() {
