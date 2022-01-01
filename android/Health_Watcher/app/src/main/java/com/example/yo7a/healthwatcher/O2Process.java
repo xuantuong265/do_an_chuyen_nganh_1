@@ -203,7 +203,7 @@ public class O2Process extends Activity {
 
                 double R = (varr / meanr) / (varb / meanb);
 
-                double spo2 = 100 - 5 * (R);
+                double spo2 = 100 - 4 * (R);
                 o2 = (int) (spo2);
 
                 if ((o2 < 80 || o2 > 99) || (bpm < 45 || bpm > 200)) {
