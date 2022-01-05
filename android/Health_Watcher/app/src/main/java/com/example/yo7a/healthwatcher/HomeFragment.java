@@ -39,6 +39,12 @@ public class HomeFragment extends Fragment {
         loadUserDetail();
         getToken();
 
+
+        return  binding.getRoot();
+    }
+
+    private void ListenEvent() {
+
         binding.HR.setOnClickListener(v -> {
             p = 1;
             Intent i = new Intent(v.getContext(), StartVitalSigns.class);
@@ -53,7 +59,11 @@ public class HomeFragment extends Fragment {
             startActivity(i);
         });
 
-        return  binding.getRoot();
+        binding.covid.setOnClickListener(v -> {
+            Intent i = new Intent(v.getContext(), Statistics.class);
+            startActivity(i);
+        });
+
     }
 
     private void loadUserDetail() {

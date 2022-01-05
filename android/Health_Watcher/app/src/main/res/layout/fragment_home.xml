@@ -26,8 +26,8 @@
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:orientation="horizontal">
 
+
                 <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/person"
                     android:layout_width="@dimen/_40sdp"
                     android:layout_height="@dimen/_40sdp"
@@ -35,8 +35,7 @@
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:clipToOutline="true"
                     android:src="@mipmap/person"
-                    app:civ_border_color="#FF000000"/>
-
+                    app:civ_border_color="#FF000000" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -45,7 +44,7 @@
 
                     <TextView
                         android:id="@+id/textName"
-                        android:layout_width="match_parent"
+                        android:layout_width="221dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="@color/white"
@@ -76,9 +75,9 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="@dimen/_26sdp"
                     android:layout_height="@dimen/_26sdp"
-                    android:padding="@dimen/_3sdp"
                     android:layout_marginEnd="@dimen/_16sdp"
                     android:background="@drawable/background_icon"
+                    android:padding="@dimen/_3sdp"
                     android:src="@drawable/ic_baseline_notifications_none_24"
                     app:tint="@color/orange" />
 
@@ -163,6 +162,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/covid"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_columnWeight="1"
@@ -343,7 +343,23 @@
                     android:layout_height="wrap_content" >
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="@dimen/_261sdp"
+                        android:background="@color/grey"
+                        android:layout_width="@dimen/_256sdp"
+                        android:layout_height="@dimen/_98sdp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="center"
+                        app:cardElevation="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/preventcovid" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_256sdp"
                         android:layout_height="@dimen/_82sdp"
                         app:cardCornerRadius="20dp"
                         android:layout_gravity="center"
@@ -371,7 +387,6 @@
                         android:layout_width="@dimen/_261sdp"
                         android:layout_height="@dimen/_100sdp"
                         app:cardCornerRadius="20dp"
-                        android:layout_marginBottom="20dp"
                         android:layout_gravity="center"
                         app:cardElevation="6dp">
 
@@ -379,21 +394,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:src="@mipmap/vaccine" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:background="@color/grey"
-                        android:layout_width="@dimen/_261sdp"
-                        android:layout_height="@dimen/_100sdp"
-                        app:cardCornerRadius="20dp"
-                        android:layout_gravity="center"
-                        app:cardElevation="6dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/preventcovid" />
 
                     </androidx.cardview.widget.CardView>
 
