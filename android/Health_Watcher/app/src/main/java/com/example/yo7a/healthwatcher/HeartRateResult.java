@@ -3,6 +3,7 @@ package com.example.yo7a.healthwatcher;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +40,8 @@ public class HeartRateResult extends AppCompatActivity implements SaveDatabase{
 
         Date = df.format(today);
         TextView RHR = this.findViewById(R.id.HRR);
-        ImageButton SHR = this.findViewById(R.id.SendHR);
+        Button SHR = this.findViewById(R.id.SendHR);
+        Button goBack = this.findViewById(R.id.back_home);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -60,6 +62,11 @@ public class HeartRateResult extends AppCompatActivity implements SaveDatabase{
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(HeartRateResult.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        goBack.setOnClickListener(v -> {
+            Intent i = new Intent(HeartRateResult.this, MenuNavigation.class);
+            startActivity(i);
         });
 
     }

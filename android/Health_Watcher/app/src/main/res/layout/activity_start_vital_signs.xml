@@ -39,7 +39,7 @@
         android:id="@+id/StartVS"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
-        android:text="@string/sign_in"
+        android:text="@string/start"
         android:background="@drawable/button_sign"
         android:textColor="@color/white"
         android:textSize="@dimen/_13ssp"

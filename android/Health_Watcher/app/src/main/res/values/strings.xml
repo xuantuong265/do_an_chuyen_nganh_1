@@ -73,4 +73,7 @@
     <string name="today_recovered">Recovered</string>
     <string name="today_active">Active</string>
     <string name="today_critical">Critical</string>
+    <string name="share">Share</string>
+    <string name="go_back">Go Back</string>
+    <string name="start">Start</string>
 </resources>
