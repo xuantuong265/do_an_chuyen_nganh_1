@@ -95,23 +95,34 @@
         <entry key="..\:/Program Files/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/layout_sub_item_history.xml" value="0.259375" />
         <entry key="..\:/Program Files/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/menu/main_menu.xml" value="0.259375" />
         <entry key="..\:/Program Files/do_an_chuyen_nganh_1/app/app/src/main/res/layout/activity_primary.xml" value="0.259375" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/background_button.xml" value="0.1574074074074074" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/background_content_bottom.xml" value="0.17743589743589744" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/background_icon.xml" value="0.17037037037037037" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/background_item_history.xml" value="0.14166666666666666" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/background_profile.xml" value="0.14166666666666666" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/call_button.xml" value="0.1574074074074074" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/hospital.xml" value="0.16111111111111112" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/layout_border.xml" value="0.16574074074074074" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/layout_item_history.xml" value="0.16574074074074074" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/notification.xml" value="0.17037037037037037" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/person.xml" value="0.14166666666666666" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/drawable/round_outline.xml" value="0.19583333333333333" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_first.xml" value="0.1" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_heart_rate_result.xml" value="0.15353260869565216" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_menu_navigation.xml" value="0.12092391304347826" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_o2_process.xml" value="0.1480978260869565" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_o2_result.xml" value="0.1480978260869565" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_primary.xml" value="0.12092391304347826" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_start_vital_signs.xml" value="0.15353260869565216" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/activity_statistics.xml" value="0.16621376811594202" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/app_bar.xml" value="0.12092391304347826" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_global.xml" value="0.16621376811594202" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_history.xml" value="0.11096014492753623" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_home.xml" value="0.1118659420289855" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_hospital.xml" value="0.15353260869565216" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_message.xml" value="0.10099637681159421" />
+        <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_my_country.xml" value="0.16621376811594202" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/fragment_person.xml" value="0.1118659420289855" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/item_container_received_message.xml" value="0.1118659420289855" />
         <entry key="..\:/do_an_chuyen_nganh_1/android/Health_Watcher/app/src/main/res/layout/item_container_recent_conversion.xml" value="0.1118659420289855" />
@@ -168,7 +179,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

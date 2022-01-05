@@ -18,7 +18,7 @@ public class MenuNavigation extends AppCompatActivity {
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
 
-        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.notification));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_history_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.hospital));
         bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.home));
         bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.person));
@@ -49,7 +49,7 @@ public class MenuNavigation extends AppCompatActivity {
             }
         });
 
-        bottomNavigation.setCount(1, "10");
+        //bottomNavigation.setCount(1, "10");
 
         bottomNavigation.show(3, true);
 

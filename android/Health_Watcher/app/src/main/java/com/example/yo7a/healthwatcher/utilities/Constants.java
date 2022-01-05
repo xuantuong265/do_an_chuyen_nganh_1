@@ -1,5 +1,7 @@
 package com.example.yo7a.healthwatcher.utilities;
 
+import java.text.DecimalFormat;
+
 public class Constants {
 
     public static final String KEY_COLLECTION_USERS = "users";
@@ -28,5 +30,12 @@ public class Constants {
     public static final String KEY_LAST_MESSAGE = "lastMessage";
     public static final String BPM = "BPM";
     public static final String MEASURE_OXYGEN = "Measure oxygen";
+    public static final String URL_API_COVID = "https://corona.lmao.ninja/v2/";
+
+
+    public static String formatNumber(double number) {
+        DecimalFormat formatter = new DecimalFormat("#,###,###");
+        return formatter.format(number);
+    }
 
 }

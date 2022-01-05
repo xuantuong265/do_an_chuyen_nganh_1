@@ -60,5 +60,20 @@
     <string name="lightly_place_your_index_finger_on_n_the_rear_camera_n_make_sure_the_camera_is_fully_n_covered_n_measure_in_a_shaded_environment_n_don_t_move_your_finger_until_the_n_measurement_is_complete_n_finally_place_your_finger_then_press_n_start">- Lightly place your index finger on \n the rear camera.\n- Make sure the camera is fully \n covered. \n- Measure in a shaded environment. \n- Don\'t move your finger until the \n measurement is complete. \n- Finally place your finger then press \n start.</string>
     <string name="hello_there_welcome_back">Hello there, Welcome Back</string>
     <string name="history">History</string>
-
+    <string name="statistics">Statistics</string>
+    <string name="cases">Cases</string>
+    <string name="deaths">Deaths</string>
+    <string name="recovered">Recovered</string>
+    <string name="active">Active</string>
+    <string name="critical">Critical</string>
+    <string name="total">Total</string>
+    <string name="today">Today</string>
+    <string name="today_cases">Cases</string>
+    <string name="today_deaths">Deaths</string>
+    <string name="today_recovered">Recovered</string>
+    <string name="today_active">Active</string>
+    <string name="today_critical">Critical</string>
+    <string name="share">Share</string>
+    <string name="go_back">Go Back</string>
+    <string name="start">Start</string>
 </resources>

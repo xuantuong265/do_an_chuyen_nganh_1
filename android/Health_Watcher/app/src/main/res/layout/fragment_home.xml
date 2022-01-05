@@ -95,7 +95,7 @@
 
                 <GridLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="192dp"
+                    android:layout_height="wrap_content"
                     android:alignmentMode="alignMargins"
                     android:columnCount="3"
                     android:horizontalSpacing="10dp"
@@ -112,7 +112,6 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill_horizontal"
                         android:gravity="center"
-                        android:background="@drawable/background_layout"
                         android:padding="@dimen/_4sdp"
                         android:orientation="vertical">
 
@@ -140,7 +139,6 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill_horizontal"
                         android:gravity="center"
-                        android:background="@drawable/background_layout"
                         android:padding="@dimen/_4sdp"
                         android:orientation="vertical">
 
@@ -150,7 +148,7 @@
                             android:src="@mipmap/oxygen" />
 
                         <TextView
-                            android:layout_width="111dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
@@ -168,7 +166,6 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill_horizontal"
                         android:gravity="center"
-                        android:background="@drawable/background_layout"
                         android:padding="@dimen/_4sdp"
                         android:orientation="vertical">
 
@@ -178,7 +175,7 @@
                             android:src="@mipmap/covid" />
 
                         <TextView
-                            android:layout_width="@dimen/_70sdp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:maxLines="2"
@@ -195,7 +192,6 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill_horizontal"
                         android:gravity="center"
-                        android:background="@drawable/background_layout"
                         android:padding="@dimen/_4sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:orientation="vertical">
@@ -206,7 +202,7 @@
                             android:src="@mipmap/docter" />
 
                         <TextView
-                            android:layout_width="111dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
@@ -223,7 +219,6 @@
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill_horizontal"
                         android:gravity="center"
-                        android:background="@drawable/background_layout"
                         android:padding="@dimen/_4sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:orientation="vertical">
@@ -234,7 +229,7 @@
                             android:src="@mipmap/book" />
 
                         <TextView
-                            android:layout_width="97dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_regular"
                             android:gravity="center"
@@ -253,7 +248,6 @@
                         android:gravity="center"
                         android:padding="@dimen/_4sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:background="@drawable/background_layout"
 
                         android:orientation="vertical">
 
